@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity22"
+    android:background="@color/lightGray">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:hint="Search"
+        android:textSize="22sp"
+        android:id="@+id/txt_SearchText"
+        android:paddingLeft="20dp"
+        android:shadowColor="@color/purple_200"
+        android:background="@drawable/custom_edittext"
+        android:layout_margin="15dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/txt_SearchText"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="40dp"
+        android:background="@color/colorAccent"
+        android:src="@drawable/ic_upload"
+        android:onClick="floating_upload"/>
+</RelativeLayout>
